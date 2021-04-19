@@ -1,4 +1,4 @@
-This is a full-stack data science coursework project for stock price prediction
+## This is a full-stack data science coursework project for stock price prediction  
 It contains such stages:
 1. Data collection
 2. Data exploration
