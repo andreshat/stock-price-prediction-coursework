@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table rows</title>
+</head>
+<body>
+  <div class="container">
+    {% for crypto in crypto_table %}
+    <ul>
+      <li>
+        <span class="field-name">Time:</span>
+        <span class="field-value">{{ crypto.time }}</span>
+      </li>
+      <li>
+        <span class="field-name">Close:</span>
+        <span class="field-value">{{ crypto.close }}</span>
+      </li>
+      <li>
+        <span class="field-name">High:</span>
+        <span class="field-value">{{ crypto.high }}</span>
+      </li>
+      <li>
+        <span class="field-name">Low:</span>
+        <span class="field-value">{{ crypto.low }}</span>
+      </li>
+      <li>
+        <span class="field-name">Open:</span>
+        <span class="field-value">{{ crypto.open }}</span>
+      </li>
+      <li>
+        <span class="field-name">Volume from:</span>
+        <span class="field-value">{{ crypto.volumefrom }}</span>
+      </li>
+      <li>
+        <span class="field-name">Volume to:</span>
+        <span class="field-value">{{ crypto.volumeto }}</span>
+      </li>
+      <li>
+        <span class="field-name">Crypto:</span>
+        <span class="field-value">{{ crypto.crypto }}</span>
+      </li>
+    </ul>
+    {% endfor %}
+  </div>
+</body>
+</html>
